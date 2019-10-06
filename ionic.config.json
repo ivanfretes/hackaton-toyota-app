@@ -1,0 +1,7 @@
+{
+  "name": "cero-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

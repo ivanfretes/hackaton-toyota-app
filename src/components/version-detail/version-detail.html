@@ -1,0 +1,60 @@
+
+    <!-- Listado de versiones -->
+    <!--ion-list>
+        <ion-item *ngFor="let version of versiones">
+            <ion-avatar item-start>
+            <img src="http://localhost/shcero/web/images/upload/{{ version.icono_version }}">
+            </ion-avatar>
+            <h2>{{ version.nom_version}}</h2>
+            <h3>Precio de Lista: {{ version.contado_lista }}</h3>
+            <p>Financiación Bancaria: {{ version.contado }}</p>
+        </ion-item>
+    </ion-list-->
+    
+
+    <!-- Colores disponibles -->
+
+    
+
+    <!-- Ficha Tecnica -->
+    <div padding>
+        <ion-segment [(ngModel)]="pet">
+            <ion-segment-button value="dashboard">
+                Resumén
+            </ion-segment-button>
+            <ion-segment-button value="price">
+                Precio
+            </ion-segment-button>
+            <ion-segment-button value="versiones">
+                Versiones
+            </ion-segment-button>
+            <ion-segment-button value="espec">
+                Especificaciones
+            </ion-segment-button>
+            <ion-segment-button value="galeria">
+                Galeria
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+          
+    <div [ngSwitch]="pet">
+        <ion-list *ngSwitchCase="'puppies'">
+            <ion-item>
+            <ion-thumbnail item-start>
+                <img src="img/thumbnail-puppy-1.jpg">
+            </ion-thumbnail>
+            <h2>Ruby</h2>
+            </ion-item>
+            ...
+        </ion-list>
+        
+        <ion-list *ngSwitchCase="'kittens'">
+            <ion-item>
+            <ion-thumbnail item-start>
+                <img src="img/thumbnail-kitten-1.jpg">
+            </ion-thumbnail>
+            <h2>Luna</h2>
+            </ion-item>
+            ...
+        </ion-list>
+    </div>

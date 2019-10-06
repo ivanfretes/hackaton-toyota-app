@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="primary">
+    
+    <ion-title>
+      {{ segmento.segmento_nombre }}
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button (click)="viewSearchBasicPage()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div *ngIf="tipo_vehiculo != undefined" >
+    <ion-item class="item-title-top">
+      NOMBRE DEL SEGMENTO
+    </ion-item>    
+  </div>
+
+    <ion-list>
+      <button ion-item *ngFor="let marca of marcas" (click)="viewModeloListPage(marca);">
+        <ion-thumbnail item-start>
+          <img src="{{imagePath}}/{{ marca.brand_logo}}" class="img-logo-marca">
+        </ion-thumbnail>
+        <h2>{{ marca.brand_name | titlecase }}</h2>
+        <p>{{ marca.dealer_name | titlecase }}</p>
+
+      </button>
+    </ion-list>
+</ion-content>

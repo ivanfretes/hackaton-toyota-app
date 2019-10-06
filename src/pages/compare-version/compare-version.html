@@ -1,0 +1,63 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Comparador</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+   <ion-list>
+    <ion-item>
+      <ion-label>Marcas:</ion-label>
+        <ion-select [(ngModel)]="brandIdSelected" 
+          (ngModelChange)="getVehicles($event)"
+          cancelText="Cancelar" okText="Seleccionar">
+          <ion-option value="-1" selected="true">--</ion-option>
+          
+          <ion-option *ngFor="let b of brandList" value="{{b.brand_id}}" >
+            {{ b.brand_name | titlecase }} <!-- Representante -->
+          </ion-option>
+        </ion-select>
+    </ion-item>
+
+    <!--  Si la marca esta seleccionada -->
+    <ion-item *ngIf="brandIdSelected != -1">
+      <ion-label>Modelo:</ion-label>
+      <ion-select [(ngModel)]="vehicleIdSelected" 
+        (ngModelChange)="getVersions($event)"
+        cancelText="Cancelar"    
+        okText="Seleccionar" >
+          <ion-option *ngFor="let v of vehicleList" value="{{v.vehicle_id}}">{{ v.vehicle_name | titlecase }}
+          </ion-option>
+      </ion-select>
+    </ion-item>
+    
+
+    <!-- Si se selecciono un vehiculo -->
+     <ion-item *ngIf="vehicleIdSelected != -1">
+        <ion-label>Versión:</ion-label>
+        <ion-select [(ngModel)]="versionIndexSelected" 
+          (ngModelChange)="saveVersion($event)"
+          cancelText="Cancelar"    
+          okText="Seleccionar" >
+            <ion-option value="-1" selected="true">--</ion-option>
+
+            <ion-option *ngFor="let v of versionList; let i = index" value="{{ i }}">
+              {{ v.version_name | titlecase }}
+            </ion-option>
+        </ion-select>
+     </ion-item>
+
+  </ion-list>
+
+
+  <!-- Ficha Tecnica Obtenida -->
+  <ion-list>
+    <!--button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+      {{ item }}
+    </button-->  
+  </ion-list>
+</ion-content>

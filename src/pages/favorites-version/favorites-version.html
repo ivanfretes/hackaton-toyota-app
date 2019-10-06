@@ -1,0 +1,71 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    
+    <ion-buttons start>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title>
+      Mi Auto
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button (click)="viewSearchBasicPage()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content >
+
+    
+    <ion-card *ngFor="let modelo of modelos" >
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="{{ imagePath }}/{{ modelo.brand.brand_logo }}" 
+               (click)="viewModeloDetailPage(modelo);"  
+               class="img-cover-page">
+        </ion-avatar>
+        <h2>{{ modelo.brand.brand_name | titlecase}}</h2>
+        <p>{{ modelo.dealer.dealer_name | titlecase }}</p>
+      </ion-item>
+
+      <img src="{{ imagePath }}/{{ modelo.images.cover_page }}" class="img-cover-page">
+
+      <ion-card-content>
+        <ion-card-title>
+          {{ modelo.vehicle_name | titlecase }}
+        </ion-card-title>
+
+        <p>{{ modelo.vehicle_description }}</p>
+      </ion-card-content>
+
+      <ion-row>
+        <!--ion-col>
+          <button ion-button icon-start clear small (click)="removeVersionToFavorites(modelo)">
+            <ion-icon name="heart"></ion-icon>
+            <div>Borrar</div>
+          </button>
+        </ion-col-->
+        <ion-col>
+          <button ion-button icon-start clear small *ngIf="modelo.version_default != null">
+            <ion-icon ios="ios-cash" md="md-cash"></ion-icon>
+            <div> {{ modelo.version_default.cash_price | currency  }} </div>
+          </button>
+        </ion-col>
+        <!--ion-col center text-center>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col-->
+      </ion-row>
+
+  </ion-card>
+
+</ion-content>

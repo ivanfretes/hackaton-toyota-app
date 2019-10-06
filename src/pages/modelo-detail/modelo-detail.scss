@@ -1,0 +1,71 @@
+page-modelo-detail {
+    .vehicle-cover {
+        margin-top: -10px;
+    }
+
+    .vehicle-cover-image {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+     .vehicle-cover-content {
+        font-size: 16px !important;
+        margin-top: 10px;
+    }
+
+    .scroll-content {
+        margin-top: 0px !important;
+    }
+
+    .card-ios, .card-md {
+        background: #fff;
+    }
+
+    .card-md .item-md, .card-ios .item-ios {
+        background-color: #444444;
+        border-bottom: 3px solid #333;
+    }
+
+    .card-md .item-md h2, .card-ios .item-ios h2, {
+        color: #fff;
+    }
+
+    .card-md .item-md p, .card-ios .item-ios p, {
+        color: #fff;
+    }
+
+    .toolbar-md, .toolbar-ios  {
+        padding: 15px;
+    }
+
+    .list-md , .list-ios {
+        background-color: #fff !important;
+    }
+
+
+    .list-md .item-md, .list-ios .item-ios {
+        background-color: #fff !important;
+    }
+
+    ion-list h3 {
+        text-align: center;
+    }
+
+    .sc-basic h3 {
+        text-align: center;
+    }
+
+    .sc-ficha-preview {
+        background-color: #fff;
+    }
+
+
+    .img-description {
+        height: 250px;
+        width:  100%;
+        object-fit: cover
+    }
+}
+
+

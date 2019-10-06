@@ -1,0 +1,162 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #fb3f33, //#fb3f33
+  secondary:  #912912,
+  tertiary :  #5f6288,
+  danger:     #f04141,
+  success :   #21a554,
+  alert :     #ffce00,
+  second :    #1f1f1f,
+  light:      #f4f5f8,
+  dark:       #222428,
+  darkTransparent : rgba(34,36,40,0.50),
+);
+
+
+$background-color: #d6cbcb; 
+$card-md-background-color : #fff;
+$card-md-background-color : #fff;
+$card-ios-border-radius : 10px;
+$card-md-border-radius : 10px;
+$card-md-header-color : #fff;
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+
+// -- custom theme --
+  ion-navbar ion-title {
+    text-align: center;
+  }
+ 
+  .toolbar-content-md {
+    width: 100%;
+    position: absolute; 
+  }
+
+  .bar-button-md {
+    z-index: 1000;
+  }
+
+  .item-title-top {
+    background: #fb3f33;
+  }
+
+  .list-header-md {
+    background: #fb3f33 !important;
+    color: #fff !important;
+    font-size: 17px !important ;
+  }
+    
+  ion-title {
+      text-align: center;
+      margin-left: -30px;
+  }
+
+  .toolbar-md, .toolbar-ios  {
+      padding: 15px !important;
+  }
+
+
+  .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+      border-bottom: 1px #fb3f33 !important;
+      box-shadow: inset 0 -1px 0 0 #fb3f33 !important;
+  }
+
+
+  .textRight {
+    text-align: right;
+  }
+
+  .textJustify {
+    text-align: justify;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

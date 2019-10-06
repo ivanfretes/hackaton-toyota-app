@@ -1,0 +1,11 @@
+<ion-grid>
+  <ion-row>
+    <ion-col *ngFor="let tipo of tipo_vehiculos" (click)="viewRepresentantePage(tipo)"
+      col-6 col-md-4>
+      <div class="icono-tipo-vehiculo">
+        <img src="">
+          {{ tipo.nom_segmento }}
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>

@@ -1,0 +1,31 @@
+page-search-basic {
+    ion-header {
+        background-color: #444444;
+    }
+
+
+    .img-cover-page {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-ios, .card-md {
+        background: #fff;
+    }
+
+    .card-md .item-md, .card-ios .item-ios {
+        background-color: #444444;
+    }
+
+     .card-md .item-md h2, .card-ios .item-ios h2, {
+        color: #fff;
+    }
+
+    .card-md .item-md p, .card-ios .item-ios p, {
+        color: #fff;
+    }
+
+    .card-md span.button-inner,.card-ios span.button-inner {
+        font-size: 11px;
+    }
+}   

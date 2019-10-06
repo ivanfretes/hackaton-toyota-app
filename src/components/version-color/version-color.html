@@ -1,0 +1,20 @@
+<div *ngIf="colores != undefined && colores.length != 0">
+    <div padding>
+        <h3>Colores</h3>
+    </div>
+
+    <div>
+        <img src="{{ imagePath +'/'+ imageColorSelected.image }}" >
+    </div>
+
+    <div class="row">
+        <div *ngFor="let color of colores; 
+                    let indexColor = index;" 
+            class="col" 
+            (click)="setPreview(indexColor)" >
+            <div class="image-color"
+                [ngStyle]="{'backgroundColor': color.hex_color != null ? color.hex_color :  '#fff' }">
+            </div>
+        </div>
+    </div>
+</div>

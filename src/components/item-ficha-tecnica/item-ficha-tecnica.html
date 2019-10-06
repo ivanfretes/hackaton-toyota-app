@@ -1,0 +1,12 @@
+<ion-item>
+  {{ name }}
+
+  <div [ngSwitch]="type" item-end>
+    <ion-icon *ngSwitchCase="'bool'" 
+      name="{{ valueGeneric }}"></ion-icon>
+    <div *ngSwitchDefault>
+      {{ valueGeneric }}
+    </div> 
+  </div>
+
+</ion-item>

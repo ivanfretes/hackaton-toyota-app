@@ -1,0 +1,313 @@
+<ion-list>    
+
+    <!-- Especificaciones -->
+    <ion-list-header>Especificaciones</ion-list-header>
+    <item-ficha-tecnica [name]="'Motor'" 
+    [value]="versionSelected.motor_cc"     
+    ></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Torque Máx'" 
+    [value]="versionSelected.max_torque"     
+    ></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Descrip. Motor'" 
+    [value]="versionSelected.descripcion_motor"     
+    ></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Combustible'" 
+    [value]="versionSelected.tipo_combustible"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Transmisión'" 
+    [value]="versionSelected.tipo_transmision"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Vol. Carga Lts.'" 
+    [value]="versionSelected.volumen_carga_litros"     
+    ></item-ficha-tecnica>   
+    <item-ficha-tecnica [name]="'Kilometraje'" 
+    [value]="versionSelected.kilometraje_arai"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Poder Máx.'" 
+    [value]="versionSelected.maximo_poder"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Asientos'" 
+    [value]="versionSelected.asientos"     
+    ></item-ficha-tecnica>     
+
+
+    <!-- Caracteristicas -->
+    <ion-list-header>Características</ion-list-header>
+    <item-ficha-tecnica [name]="'Pantalla Táctil'" 
+    [value]="versionSelected.pantalla_tactil"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Frente Energía'" 
+    [value]="versionSelected.frente_energia_windows"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Diréc. Asistida'" 
+    [value]="versionSelected.direccion_asistida"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Faros Antiniebla'" 
+    [value]="versionSelected.faros_antiniebla_delantero"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Cubiertas de Rueda'" 
+    [value]="versionSelected.cubiertas_rueda"     
+    [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Aire Acond.'" 
+    [value]="versionSelected.aire_acondicionado"     
+    [type]="'bool'"></item-ficha-tecnica> 
+
+     <!-- Dimensionaes -->
+    <ion-list-header>Dimensiones</ion-list-header>
+    <item-ficha-tecnica [name]="'Longitud'" [value]="versionSelected.longitud" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Altura'" [value]="versionSelected.altura" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Distancia Suelo'" [value]="versionSelected.distancia_suelo_sincarga" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Front Tread'" [value]="versionSelected.front_tread" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Peso en Vacío'" [value]="versionSelected.peso_en_vacion" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Volúmen Carga'" [value]="versionSelected.volumen_carga" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Espacio Piernas Delanteras'" [value]="versionSelected.espacio_piernas_delanteras" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Espacio Piernas Traseras'" [value]="versionSelected.espacio_piernas_traseras" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Tipo Neumático'" [value]="versionSelected.tipo_neumatico" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Tamaño Rueda Aleación'" [value]="versionSelected.tamano_rueda_aleacion" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Número Puertas'" [value]="versionSelected.numero_puertas" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Número Puertas'" [value]="versionSelected.front_shoulderroom" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Anchura'" [value]="versionSelected.anchura" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Distancia Suelo Laden'" [value]="versionSelected.distancia_suelo_laden" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Base de Rueda'" [value]="versionSelected.base_de_rueda" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Pisada Trasera'" [value]="versionSelected.pisada_trasera" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Peso Bruto'" [value]="versionSelected.peso_bruto" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Espacio Libre Delantero'" [value]="versionSelected.espacio_libre_delanterio" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Espacio Cabeza Trasero'" [value]="versionSelected.espacio_para_cabeza_trasero" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Tamaño Llanta'" [value]="versionSelected.tamano_llanta" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Número Plazas'" [value]="versionSelected.numero_plazas" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Número Pisos'" [value]="versionSelected.numero_pisos" [type]="'bool'"></item-ficha-tecnica>
+    
+
+    <!-- Transmisión --> 
+    <ion-list-header>Transmisión</ion-list-header>
+    <item-ficha-tecnica [name]="'Válvulas'" 
+    [value]="versionSelected.valvulas_por_cilindro"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Tipo Motor'" 
+    [value]="versionSelected.tipo_motor"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Desplazamiento Motor'" 
+    [value]="versionSelected.desplazamiento_motor"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Máx. Poder'" 
+    [value]="versionSelected.poder_maximo"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Sist. Combustible'" 
+    [value]="versionSelected.sistema_suministro_combustible"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Índice Compresión'" 
+    [value]="versionSelected.indice_compresion"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Super Carga'" 
+    [value]="versionSelected.super_carga"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Tipo Unidad'" 
+    [value]="versionSelected.tipo_unidad"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Sincronizadores'" 
+    [value]="versionSelected.sincronizadores"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Tuerca Máxima'" 
+    [value]="versionSelected.tuerca_maxima"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Diámetro'" 
+    [value]="versionSelected.diametro_por_carrera"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Turbo Charger'" 
+    [value]="versionSelected.turbo_charger"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Caja de Cambios'" 
+    [value]="versionSelected.caja_engranajes"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Sobremarcha'" 
+    [value]="versionSelected.sobremarcha"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Tipo Embrague'" 
+    [value]="versionSelected.tipo_embrague"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Cilindros'" 
+    [value]="versionSelected.numero_cilindro"     
+    ></item-ficha-tecnica> 
+
+
+    <!-- Rendimiento -->
+    <ion-list-header>Rendimiento</ion-list-header>
+    <item-ficha-tecnica [name]="'Velocidad Máx.'" 
+    [value]="versionSelected.velocidad_maxima"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Kilometraje kmpl'" 
+    [value]="versionSelected.kilometraje_kmpl"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Tanque Litros'" 
+    [value]="versionSelected.capacidad_tanque"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Aceleración 0-100'" 
+    [value]="versionSelected.aceleracion_0_100"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Frenado 80-0'" 
+    [value]="versionSelected.frenado_80_0"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Kilometraje General'" 
+    [value]="versionSelected.kilometraje_general"     
+    [type]="'bool'"></item-ficha-tecnica>   
+    <item-ficha-tecnica [name]="'Coeficiente Arrastre'" 
+    [value]="versionSelected.coeficiente_arrastre"     
+    [type]="'bool'"></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Frenado 100-0'" 
+    [value]="versionSelected.frenado_100_0"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Kilometraje Carretera'" 
+    [value]="versionSelected.kilometraje_carretera"     
+    [type]="'bool'"></item-ficha-tecnica> 
+
+    <!-- Suspensión y frenos -->
+    <ion-list-header>Suspensión y Frenos</ion-list-header>
+    <item-ficha-tecnica [name]="'Freno Trasero'" 
+    [value]="versionSelected.tipo_freno_trasero"     
+    ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Tipo amortiguadores'" 
+    [value]="versionSelected.tipo_amortiguadores" 
+    [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Columna Dirección'" [value]="versionSelected.columna_direccion" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Radio de giro'" [value]="versionSelected.radio_de_giro" ></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Suspensión Trasera'" [value]="versionSelected.suspension_trasera" ></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Tipo Dirección'" [value]="versionSelected.tipo_direccion" ></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Engranaje Dirección'" [value]="versionSelected.tipo_engranaje_direccion" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Freno Delantero'" [value]="versionSelected.tipo_freno_delantero" [type]=""></item-ficha-tecnica>
+
+    <!-- Confort -->
+    <ion-list-header>Confort</ion-list-header>
+
+    <item-ficha-tecnica [name]="'Shoulderroom Trasero'" [value]="versionSelected.shoulderroom_trasero" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Power windows rear'" [value]="versionSelected.power_windows_rear" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Control Clima Automático'" [value]="versionSelected.control_clima_automatico" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Abre Maletas Remoto'" [value]="versionSelected.abrelatas_remoto" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Luz Combustible Bajo'" [value]="versionSelected.luz_combustible_bajo" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Luz Maletero'" [value]="versionSelected.luz_maletero" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Lámpara Lectura Trasera'" [value]="versionSelected.lampara_lectura_trasera" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Apoya Brazo Central'" [value]="versionSelected.asiento_trasero_apoya_brazo_central" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Portavasos Delantero'" [value]="versionSelected.portavasos_delantero" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Aberturas Traseras'" [value]="versionSelected.aberturas_traseras_aire" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Memoria Seat'" [value]="versionSelected.funciones_memoria_seat" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Volante Multifunción'" [value]="versionSelected.volante_multifuncion" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Sensores Estacionamiento'" [value]="versionSelected.sensores_estacionamiento" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Sistema Navegación'" [value]="versionSelected.sistema_navegacion" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Entrada Inteligente'" [value]="versionSelected.entrada_inteligente" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Modos Conducción'" [value]="versionSelected.modos_conduccion" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Volante Cambio Marchas'" [value]="versionSelected.volante_cambio_marchas" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Cuenta km'" [value]="versionSelected.cuenta_km_enla_direccion" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Puerta Trasera Entreabierta'" [value]="versionSelected.puerta_trasera_entreabierta" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Cortina Trasera'" [value]="versionSelected.cortina_trasera" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Ahorro Batería'" [value]="versionSelected.ahorro_bateria" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Power Windows Front'" [value]="versionSelected.power_windows_front" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'One touch operating power windows'" [value]="versionSelected.one_touch_operating_power_windows" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Control Calidad Aire'" [value]="versionSelected.control_calidad_aire" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Tapa Combustible Remoto'" [value]="versionSelected.abrelatas_tapa_combustible_remoto" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Accesorio toma Corriente'" [value]="versionSelected.accesorio_toma_corriente" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Espejo Vanidad'" [value]="versionSelected.espejo_vanidad" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Reposacabezas Trasero'" [value]="versionSelected.reposacabezas_asiento_trasero" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Cinturones Seguridad Delanteros'" [value]="versionSelected.cinturones_seguridad_delanteros" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Portavasos Trasero'" [value]="versionSelected.portavasos_trasero" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Asientos Calefaccion Delantero'" [value]="versionSelected.asientos_con_calefaccion_delantero" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Asiento Masaje'" [value]="versionSelected.asientos_de_masaje" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Asiento Apoyo Lumbar'" [value]="versionSelected.asiento_apoyo_lumbar" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Cruise Control'" [value]="versionSelected.cruise_control" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Aparcamiento Autónomo'" [value]="versionSelected.aparcamiento_autonomo" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Plegable Asiento Trasero'" [value]="versionSelected.plegable_asiento_trasero" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Botón Inicio Stop Motor'" [value]="versionSelected.boton_inicio_stop_motor" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Enfriamiento Guantera'" [value]="versionSelected.enfriamiento_guantera" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Control Voz'" [value]="versionSelected.control_voz" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Cargador Usb'" [value]="versionSelected.cargador_usb" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Apoyabrazos Central Consola'" [value]="versionSelected.apoyabrazos_central_consola" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Indicador Cambio Marchas'" [value]="versionSelected.indicador_cambio_marchas" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Gancho Equipaje Red'" [value]="versionSelected.gancho_equipaje_red" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Indicador Cambio Carril'" [value]="versionSelected.indicador_cambio_carril" [type]="'bool'"></item-ficha-tecnica>
+
+     
+
+    <!-- Interior -->
+    <ion-list-header>Interior</ion-list-header>
+    <item-ficha-tecnica [name]="'Columna Dirección Ajustable'" [value]="versionSelected.columna_direccion_ajustable" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Multi Tripmeter Electrónico'" [value]="versionSelected.multi_tripmeter_electronico" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Tapicería Tela'" [value]="versionSelected.tapiceria_tela" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Iluminación'" [value]="versionSelected.iluminacion" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Reloj Digital'" [value]="versionSelected.reloj_digital" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Encendedor'" [value]="versionSelected.encendedor" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Asientos Ajustables Eléctricos'" [value]="versionSelected.asientos_ajustables_electricos" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Driving Experience Control'" [value]="versionSelected.driving_experience_control_eco" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Tablero Doble Tono'" [value]="versionSelected.tablero_doble_tono" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Calentador'" [value]="versionSelected.calentador" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Tacómetro'" [value]="versionSelected.tacometro" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Asientos Piel'" [value]="versionSelected.asientos_piel" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Volante Cuero'" [value]="versionSelected.volante_cuero" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Guantera'" [value]="versionSelected.guantera" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Pantalla Temperatura Exterior'" [value]="versionSelected.pantalla_temperatura_exterior" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Odómetro Digital'" [value]="versionSelected.odometro_digital" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Mesa Plegable Trasera'" [value]="versionSelected.mesa_plegable_trasera" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Asiento Conducción Ajustable'" [value]="versionSelected.asiento_conduccion_ajustable_altura" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Asientos Ventilados'" [value]="versionSelected.asientos_ventilados" [type]="'bool'"></item-ficha-tecnica>    
+
+    <!--Seguridad -->
+    <ion-list-header>Seguridad</ion-list-header>
+    <item-ficha-tecnica [name]="'Freno Antibloqueo'" [value]="versionSelected.sistema_freno_antibloqueo" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Detección Velocidad'" [value]="versionSelected.deteccion_velocidad_auto_door" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Asistente Freno'" [value]="versionSelected.asistente_de_freno" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Cerradura Seguridad'" [value]="versionSelected.cerradura_seguridad_ninos" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Anti Pinch Power'" [value]="versionSelected.anti_pinch_power" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Bolsa Aire Pasajero'" [value]="versionSelected.bolsa_aire_pasajero" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Side Airbag Rear'" [value]="versionSelected.side_airbag_rear" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Espejo Retrovisor Día/Noche'" [value]="versionSelected.espejo_retrovisor_dianoche" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Espejo Retrovisor Lateral'" [value]="versionSelected.espejo_retrovisor_lateral" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Faros Halógenos'" [value]="versionSelected.faros_halogenos" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Advertencia Cinturón'" [value]="versionSelected.advertencia_cinturon" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Advertencia Puerta Abierta'" [value]="versionSelected.advertencia_puerta_abierta" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Vigas Impacto Frontal'" [value]="versionSelected.vigas_impacto_frontal" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Entrada Sin Llave'" [value]="versionSelected.entrada_sin_llave" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Control Estabilidad'" [value]="versionSelected.control_estabilidad_vehiculo" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Hill Assiste'" [value]="versionSelected.hill_assiste" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Faros Automáticos'" [value]="versionSelected.faros_automaticos" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Características Seguridad'" [value]="versionSelected.caracteristicas_seguridad" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Cámara Trasera'" [value]="versionSelected.camara_trasera" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Dispositivo Antirobo'" [value]="versionSelected.dispsitivo_antirobo" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Cierre Centralizado'" [value]="versionSelected.cierre_centralizado" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Ebd'" [value]="versionSelected.ebd" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Cerraduras Puerta Poder'" [value]="versionSelected.cerraduras_puerta_poder" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Alarma Antirobo'" [value]="versionSelected.alarma_antirobo" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Airbag Conductor'" [value]="versionSelected.airbag_conductor" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Side Airbag Front'" [value]="versionSelected.side_airbag_front" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Bolsas Aire Rodillas'" [value]="versionSelected.bolsas_aire_rodillas" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Faros Xenon'" [value]="versionSelected.faros_xenon" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Cinturones Traseros'" [value]="versionSelected.cinturones_traseros" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Vigas impacto Lateral'" [value]="versionSelected.vigas_impacto_lateral" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Control Tracción'" [value]="versionSelected.control_traccion" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Monitor Presión Neumáticos'" [value]="versionSelected.monitor_presion_neumaticos" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Control Descenso'" [value]="versionSelected.control_descenso_colina" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Inmovilizador Motor'" [value]="versionSelected.inmovilizador_motor" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Monitor Punto Ciego'" [value]="versionSelected.monitor_punto_ciego" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Advertencia Revisión Motor'" [value]="versionSelected.advertencia_revision_motor" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Embrague Bloqueo'" [value]="versionSelected.embrague_bloqueo" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Cámara_360'" [value]="versionSelected.camara_360" [type]="'bool'"></item-ficha-tecnica>
+
+     <!-- Entretenimiento-->
+    <ion-list-header>Entretenimiento</ion-list-header>
+    <item-ficha-tecnica [name]="'Reproductor Cassette'" [value]="versionSelected.reproductor_cassette" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Cambiador Cd'" [value]="versionSelected.cambiador_cd" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Radio'" [value]="versionSelected.radio" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Altavoces Delante'" [value]="versionSelected.altavoces_delante" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Audio 2din Integrado'" [value]="versionSelected.audio_2din_integrado" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Usb Auxiliar'" [value]="versionSelected.usb_auxiliar" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Almacenamiento Interno'" [value]="versionSelected.almacenamiento_intero" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Funciones Adicionales'" [value]="versionSelected.funciones_adicionales_entretenimiento" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Reproductor Cd'" [value]="versionSelected.reproductor_cd" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Reproductor Dvd'" [value]="versionSelected.reproductor_dvd" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Altavoces Traseros'" [value]="versionSelected.altavoces_traseros" [type]="'bool'"></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Bluetooh'" [value]="versionSelected.bluetooh" [type]="'bool'"></item-ficha-tecnica>
+
+
+    <!-- Otros -->
+    <ion-list-header>Otros</ion-list-header>
+    <item-ficha-tecnica [name]="'País'" [value]="versionSelected.pais_ensamblaje" ></item-ficha-tecnica> 
+    <item-ficha-tecnica [name]="'Tiempo Garantía'" [value]="versionSelected.tiempo_garantia" ></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'País Fabricación'" [value]="versionSelected.pais_fabricacion" ></item-ficha-tecnica>
+    <item-ficha-tecnica [name]="'Distancia Garantía'" [value]="versionSelected.distancia_garantia" ></item-ficha-tecnica> 
+</ion-list>

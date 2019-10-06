@@ -1,0 +1,142 @@
+
+<ion-header>
+  <ion-toolbar color="darkTransparent">
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios"></span>
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button (click)="addVersionToFavorites()">
+        <ion-icon name="heart"></ion-icon>
+      </button>
+
+      <!--button ion-button icon-only color="royal">
+        <ion-icon name="git-compare"></ion-icon>
+      </button!-->      
+
+      <button ion-button icon-only (click)="viewSearchBasicPage()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="versionSelected != null">
+  
+  <!-- Visualiza el detalle de la portada del modelo -->
+  <div class="vehicle-cover">
+      <img class="vehicle-cover-image" 
+        src="{{ imagePath }}/{{ modelo.images.cover_page }}" />
+    
+      <ion-card>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="{{ imagePath }}/{{ modelo.brand.brand_logo }}">
+          </ion-avatar>
+          <h2>{{ marca.brand_name + ' ' + modelo.vehicle_name | titlecase}}</h2>
+          <p>{{ modelo.dealer.dealer_name | titlecase }}</p>
+        </ion-item>
+
+        <ion-card-content>
+          <div class="vehicle-cover-content textJustify">
+            {{ modelo.vehicle_description }}
+          </div>
+        </ion-card-content>
+      </ion-card>
+  </div>
+
+  <!-- Opciones de Financiacion -->
+  <div padding>
+    <div class="row">
+      <div class="col col-2 ">
+        <h6>Precio Contado: <br>$
+        {{ versionSelected.cash_price }} 
+        </h6>
+      </div>
+      <div class="col">
+        <h6>Precio de Lista:<br>
+          {{ versionSelected.list_price }} 
+        </h6>       
+      </div>  
+    </div>
+
+    <button ion-button block round large
+      (click)="viewFinanciationBancoPage();">
+      Solicitar Financiación
+    </button>
+  </div>
+
+  <!-- Agregar a comparacion -->
+  
+  <!--Visualiza el listado de la versiones del modelo-->
+  
+  
+  <!-- Visualiza el listado de colores de la version seleccionada-->
+  <version-color [colores]="versionSelected.colors" 
+    [imageColorSelected]="versionSelected.colors[0]" ></version-color>
+
+
+  <!-- Agregar como favorito-->
+  <!--div padding>
+    <button ion-button block round large color="secundary"
+      (click)="viewFichaTecnicaFull();">
+      Guardar Modelo
+    </button>
+  </div!-->
+
+
+    <!-- Visualiza el detalle interior -->
+
+  <!-- Visualiza el detalle exterior -->
+  <img *ngIf="versionSelected.cover_external != null" src="{{ imagePath +'/'+ versionSelected.cover_external }}"
+    class="img-description">
+  <div  class="sc-basic textJustify" padding>
+    <h3>Interior</h3>
+    {{ versionSelected.description_external }}
+  </div>
+
+  <img *ngIf="versionSelected.cover_internal != null" src="{{ imagePath +'/'+ versionSelected.cover_internal}}">
+  <div class="sc-basic textJustify" padding>
+    <h3>Exterior</h3>
+    {{ versionSelected.description_internal }}
+  </div>
+
+
+  <!-- Visualiza ficha tecnica resumida de la version seleccionada -->
+
+  <div class="sc-basic sc-ficha-preview" padding>
+    <ion-list>
+      <h3>Resumén</h3>
+
+      <item-ficha-tecnica [name]="'Combustible'" [value]="versionSelected.tipo_combustible" ></item-ficha-tecnica>
+
+      <item-ficha-tecnica [name]="'Motor'" [value]="versionSelected.motor_cc + 'cc'" ></item-ficha-tecnica>
+
+      <item-ficha-tecnica [name]="'Torque Máx'" [value]="versionSelected.max_torque" ></item-ficha-tecnica>
+
+      <item-ficha-tecnica [name]="'Descrip. Motor'" [value]="versionSelected.descripcion_motor" ></item-ficha-tecnica>
+
+      <item-ficha-tecnica [name]="'Transmisión'" [value]="versionSelected.tipo_transmision" ></item-ficha-tecnica>
+
+      <item-ficha-tecnica [name]="'Tanque'" [value]="versionSelected.capacidad_tanque + 'lts'" ></item-ficha-tecnica>
+
+      <item-ficha-tecnica [name]="'Longitud'" [value]="versionSelected.longitud"></item-ficha-tecnica>
+    </ion-list>
+
+    <div>
+      <button ion-button block round large
+        (click)="viewFichaTecnicaFull();">
+        Ficha Completa
+      </button>
+    </div>
+  </div>
+  
+  
+
+
+  
+</ion-content>

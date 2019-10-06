@@ -1,0 +1,15 @@
+<ion-grid>
+  
+  <ion-row>
+    
+    <ion-col *ngFor="let segmento of segmento_list" col-6 
+      (click)="setDealerCategory(segmento)" 
+      class="segmento-icons-dash">
+      <div>
+        <img src="{{ segmento.segmento_icon }}">
+        <h3>{{ segmento.segmento_nombre }}</h3>
+      </div>
+    </ion-col>
+    
+  </ion-row>
+</ion-grid>

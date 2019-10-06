@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+   
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title>Solicitar Financiación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Entidad</ion-label>
+      <ion-select [(ngModel)]="financieraSelected"
+        (ngModelChange)="setFinancieraSelected($event);setFinancieraMontoCuotaCredito($event) " >
+        <ion-option value="-1" selected="true">--</ion-option>
+        <ion-option *ngFor="let f of financierasList; let fIndex = index" value="{{ fIndex }}">{{ f.name }}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      Interes: {{ financiacionData.interes }}%
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Plazo / Meses</ion-label>
+      <ion-input type="number" [(ngModel)]="financiacionData.plazo"
+        (ngModelChange)="setFinancieraMontoCuotaCredito($event)"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Monto de Entrega en $</ion-label>
+      <ion-input type="number" [(ngModel)]="financiacionData.montoEntrega"
+        (ngModelChange)="setFinancieraMontoCuotaCredito($event)"></ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="financieraSelected != -1 || financieraSelected != null">
+        Cuota: 
+        $ {{ financiacionData.montoCuota }}
+    </ion-item>
+
+  </ion-list>
+
+   <button ion-button block round large
+    (click)="solicitarFinanciacion();">
+    Concretar
+  </button>
+
+</ion-content>
